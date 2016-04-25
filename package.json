@@ -1,0 +1,17 @@
+{
+  "name": "default_course_website_template",
+  "version": "0.1.0",
+  "description": "This is a template to build a static website specifically for courses in a computer science oriented curriculum.  It may or may not be advisable to use it in a broader context in the future.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jared M. Moore",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "assemble": "^0.10.0",
+    "grunt": "^1.0.1",
+    "grunt-assemble": "^0.4.0",
+    "grunt-contrib-connect": "^1.0.1"
+  }
+}
