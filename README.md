@@ -12,5 +12,5 @@ This is a project for a basic course website meant to be customized as needed th
 6. Configure directory structure
 7. Configure Gruntfile.js for assemble
 
-* Note: Source for Gruntfile.js and guide at: http://www.andismith.com/blog/2014/02/getting-started-with-assemble/ *  
-* Note: Use grunt-assemble and modify in Gruntfile.js accordingly. *  
+*Note: Source for Gruntfile.js and guide at: http://www.andismith.com/blog/2014/02/getting-started-with-assemble/*  
+*Note: Use grunt-assemble and modify in Gruntfile.js accordingly.*  
