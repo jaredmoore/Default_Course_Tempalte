@@ -31,6 +31,10 @@ Assignments require a bit of additional work beyond that of announcements.  The 
 
 Long form descriptions for assignments are added by creating a new markdown file in `src/data/assignments_md/`.  The `markdown-path` metadata tag needs to be updated with the appropriate filename in `src/data/assignments.json`.  If configured correctly, the Grunt build process will go through each assignment specified by the json file and build both an HTML page and insert a link automatically on the main page.
 
+### Lectures:
+
+Currently a planned expansion.  Functionality likely similar to assignments in terms of adding to the menu bar, but likely a simpler setup as individual pages may/may not need as much detail.
+
 ### Building the Site:
 
 Building the static pages is accomplished by calling:

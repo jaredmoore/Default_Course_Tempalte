@@ -2,20 +2,66 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1.0">
-    <link href="{{assets}}/css/bootstrap.min.css" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <!--<link href="{{assets}}/css/bootstrap.min.css" rel="stylesheet">-->
     <link href="{{assets}}/css/custom.css" rel="stylesheet">
     <title>{{course-title}}</title>
   </head>
   <body>
-  	<nav class="navbar navbar-inverse">
-  		<div class="container">
+  	<nav class="navbar navbar-default">
+  		<div class="container-fluid">
   			<div class="navbar-header">
-  				<a class="navbar-brand" href="{{relative page.dest 'index.html'}}">Home</a>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			    </button>
+  				<a class="navbar-brand" href="{{relative page.dest 'index.html'}}">
+  					<img id="university-logo" alt="university image" src="{{university-logo-file}}"/>
+  				</a>
   			</div>
+
+  			<!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="course-information-header">
+				<div class="course-title-header">
+					<a href="/">{{course-title-extended}} {{course-term}}</a>
+				</div>
+		    </div><!-- /.navbar-collapse -->
+
   		</div>
   	</nav>
-    <div class="header">
-      <h1>{{course-title-extended}}</h1>
-      <h1 class="term">{{course-term}}</h1>
-    </div>
     <div class="container">
+    	<div class="row">
+    		<div class="col-sm-3">
+		    	<nav class="navbar navbar-default" role="navigation">
+				  <div class="navbar-header">
+				    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+				      <span class="sr-only">Toggle navigation</span>
+				      <span class="icon-bar"></span>
+				      <span class="icon-bar"></span>
+				      <span class="icon-bar"></span>
+				    </button>
+				  </div>
+
+				  <!-- Collect the nav links, forms, and other content for toggling -->
+				  <div class="collapse navbar-collapse navbar-ex1-collapse">
+				    <ul class="nav navbar-nav">
+				      <li><a href="{{ syllabus-path }}">Syllabus</a></li>
+				      <li class="dropdown">
+				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Assignments <span class="caret"></span></a>
+				          <ul class="dropdown-menu">
+				            {{{assignments_list}}}
+				          </ul>
+				      </li>
+				    </ul>
+				  </div><!-- /.navbar-collapse -->
+				</nav>
+			</div>
+  			<div class="col-sm-9">
+  				<div class="header">
+			      <h1>{{course-title-extended}}</h1>
+			      <h1 class="term">{{course-term}}</h1>
+			    </div>
