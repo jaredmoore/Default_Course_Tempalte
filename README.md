@@ -19,4 +19,8 @@ This is a project for a basic course website meant to be customized as needed th
 
 Building the static pages is accomplished by calling:
 
+```grunt default```
+
+Adding the `-verbose` tag will provide more insight about the build process and allow for troubleshooting any issues.
+
 ```grunt default --verbose```
