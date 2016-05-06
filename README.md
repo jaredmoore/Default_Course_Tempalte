@@ -24,3 +24,7 @@ Building the static pages is accomplished by calling:
 Adding the `-verbose` tag will provide more insight about the build process and allow for troubleshooting any issues.
 
 ```grunt default --verbose```
+
+Created files will be placed in the `dist` directory, including copies of the static css files.  
+
+*Note: For now, favicon.ico needs to be moved to the root directory manually in order to work properly on a website.*
