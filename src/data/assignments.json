@@ -1,0 +1,34 @@
+{
+  "assigns": [
+    {
+      "filename": "assign_1",
+      "metadata": {
+        "title": "Assignment #1",
+        "layout": "assignment.hbs",
+        "tags": "assigned",
+        "markdown-path": "./src/data/assignments_md/assignment_1.md"
+      },
+      "content": "This will contain a description of assignment 1"
+    },
+    {
+      "filename": "assign_2",
+      "metadata": {
+        "title": "Assignment #2",
+        "layout": "assignment.hbs",
+        "tags": "assigned",
+        "markdown-path": "./src/data/assignments_md/assignment_2.md"
+      },
+      "content": "This will contain a description of assignment 2"
+    },
+    {
+      "filename": "assign_3",
+      "metadata": {
+        "title": "Assignment #3",
+        "layout": "assignment.hbs",
+        "tags": "",
+        "markdown-path": "./src/data/assignments_md/assignment_3.md"
+      },
+      "content": "This will contain a description of assignment 3"
+    }
+  ]
+}

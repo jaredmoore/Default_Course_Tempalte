@@ -5,9 +5,51 @@ posted: 2016-04-25
 
 Welcome to the default course template website!
 
-### Contact Information
-Instructor: {{instructor-name}}  
-Phone: {{instructor-phone}}  
-Home Page: [click here]({{instructor-homepage}})  
-Office: {{instructor-office}}  
-Office Hours: {{instructor-office-hours}}  
+<div class="contact_information row">  
+	<div class="col-sm-12">
+		<h3>Contact Information</h3>
+	</div>
+	<div class="col-sm-6">
+		Instructor: {{instructor-name}}  
+		Phone: {{instructor-phone}}  
+		Home Page: [click here]({{instructor-homepage}})  
+	</div>
+	<div class="col-sm-6">
+		Office: {{instructor-office}}  
+		Office Hours: {{instructor-office-hours}}  
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-sm-6">
+		<h3>Course Documents</h3>
+		[Syllabus]({{syllabus-path}})  
+		[CIS Academic Honesty](http://www.cis.gvsu.edu/academic-honesty/)
+	</div>
+	<div class="col-sm-6">
+		<h3>Text</h3>
+
+		{{textbook}}
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-sm-6">
+		<h3>Announcements</h3>
+
+		<ul>
+			{{{announcement_list}}}
+		</ul>
+
+	</div>
+	<div class="col-sm-6">
+		<h3>Assignments</h3>
+
+		<ul>
+			{{{assignments_list}}}
+		</ul>
+
+	</div>
+</div>
+
+### Reference

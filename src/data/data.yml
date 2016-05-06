@@ -6,3 +6,10 @@ instructor-phone: "XXX-XXX-XXXX"
 instructor-homepage: "http://www.jaredmmoore.com"
 instructor-office: "TBD"
 instructor-office-hours: "TBD"
+syllabus-path: "../syllabus.html"
+textbook: "The official text for this course is \"Digital Design and Computer Architecture (2nd Edition)\" by David Money Harris and Sarah L. Harris, ISBN:9780123944245"
+announcement_list: <% _.forEach(announcement, function(text) { %><li><%= text %></li><% }); %>
+announcement: 
+- Announcement 1 is about test 1.
+- Announcement 2 is about free bagel day!
+assignments_list: <% _.forEach(assignments.assigns, function(text) { %><li><a href="<%= text.filename %>.html"><%= text.metadata.title %></a></li><% }); %>

@@ -2,9 +2,7 @@
   <div class="row">
   	<div class="col-sm-12">
     	<h2>{{ this.page.title }}</h2>
-    	{{#markdown}}
-      		{{> body }}
-    	{{/markdown}}
+      		{{{md this.page.markdown-path}}}
     </div>
   </div>
 {{>site-footer}}

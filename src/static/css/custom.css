@@ -1,0 +1,9 @@
+.header h1 {
+	text-align:center;
+	font-size:x-large;
+}
+
+.header .term {
+	font-size:large;
+	margin-top: 0px;
+}
