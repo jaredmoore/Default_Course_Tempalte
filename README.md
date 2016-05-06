@@ -14,3 +14,9 @@ This is a project for a basic course website meant to be customized as needed th
 
 *Note: Source for Gruntfile.js and guide at: http://www.andismith.com/blog/2014/02/getting-started-with-assemble/*  
 *Note: Use grunt-assemble and modify in Gruntfile.js accordingly.*  
+
+### Building the Site:
+
+Building the static pages is accomplished by calling:
+
+```grunt default --verbose```
