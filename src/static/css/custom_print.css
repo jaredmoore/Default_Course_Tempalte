@@ -1,0 +1,18 @@
+body {
+	font-family: Georgia, serif;
+	background: none;
+	color: black;
+}
+#page {
+	width: 100%;
+	margin: 25mm 25mm 25mm 25mm;
+	padding: 0;
+	background: none;
+}
+#header, #menu-bar, #sidebar, #footer {
+	display: none;
+}
+
+#printed-article {
+	border: 1px solid #666;
+}
