@@ -16,3 +16,8 @@ body {
 #printed-article {
 	border: 1px solid #666;
 }
+
+img.center {
+	display: block;
+	margin: 0 auto;
+}

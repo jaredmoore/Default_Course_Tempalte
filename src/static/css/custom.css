@@ -77,3 +77,45 @@
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
+
+.schedule-table tr {
+	vertical-align: top;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.schedule-table td {
+	padding:10px;
+}
+
+.schedule-table td:first-child {
+	text-align: center;
+}
+
+.schedule-table th {
+	padding-right:10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid black;
+}
+
+.grading-table td {
+	padding:2px 10px;
+}
+
+img.center {
+	display: block;
+	margin: 0 auto;
+}
+
+p.printer {
+	display: none;
+}
+
+span.not_assigned {
+	visibility: hidden;
+}
+
+span.assigned {
+	
+}

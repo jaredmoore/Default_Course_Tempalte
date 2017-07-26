@@ -2,15 +2,45 @@ university-logo-file: "static/gvsu_logo.png"
 course-title: "Default Course XXXX"
 course-title-extended: "Course XXXX - Long Course Title Here"
 course-term: "Fall 2016"
+course-location: "MAK AXXXX"
+course-time: "SS 0:00-0:00AM"
 instructor-name: "Jared Moore"
 instructor-phone: "XXX-XXX-XXXX"
+instructor-email: "moorejar@gvsu.edu"
 instructor-homepage: "http://www.jaredmmoore.com"
 instructor-office: "TBD"
 instructor-office-hours: "TBD"
-syllabus-path: "../syllabus.html"
+syllabus-path: "./syllabus.html"
 textbook: "The official text for this course is \"Digital Design and Computer Architecture (2nd Edition)\" by David Money Harris and Sarah L. Harris, ISBN:9780123944245"
 announcement_list: <% _.forEach(announcement, function(text) { %><li><%= text %></li><% }); %>
 announcement: 
 - Announcement 1 is about test 1.
 - Announcement 2 is about free bagel day!
 assignments_list: <% _.forEach(assignments.assigns, function(text) { %><li><a href="<%= text.filename %>.html"><%= text.metadata.title %></a></li><% }); %>
+projects_list: <% _.forEach(projects.project, function(text) { %><li><a href="<%= text.filename %>.html"><%= text.metadata.title %></a></li><% }); %>
+dates_list: <% _.forEach(date, function(text) { %><li><%= text %></li><% }); %>
+date: 
+ - Drop Deadline Friday, October 28, 2016 by 5:00 PM
+ - Final Exam Wednesday, December 14, 2016 8:00-9:50 AM
+objectives_list: <% _.forEach(objective, function(text) { %><li><%= text %></li><% }); %>
+objective:
+  - Do 1 thing
+  - Demonstrate competency in another
+  - Jump through two hoops on one foot
+policies_list: <% _.forEach(policy, function(text) { %><li><%= text %></li><% }); %>
+policy:
+  - Assignments are due at the beginning of class on the due date.  I reserve the right to specify alternate submission cutoffs per assignment.
+  - Late assignments will be penalized according to the instructions on each assignment.  Any assignment more than 14 days late is automatically graded as a 0, no exceptions.
+  - Assignments are to be completed individually unless directed otherwise.
+  - Labs, exams, and quizzes will not be rescheduled unless in extreme emergencies.  If you have a question about this, please ask me.
+  - The drop deadline with a "W" is XXXXXXXXXXXXXXXXXXX.  You must drop the course yourself.
+  - Attendance in this course is required.  Absences are occasionally necessary, but excessive absences may result in a lower grade.  
+prerequisites_list: <% _.forEach(prerequisite, function(text) { %><li><%= text %></li><% }); %>
+prerequisite:
+  - CIS XXX
+references_list: <% _.forEach(reference, function(text) { %><a target='_blank' href="<%=text[1]%>"><%= text[0] %></a> - <span><%= text[2] %></span><br><% }); %>
+reference:
+  Something:
+    - Link text
+    - www.cnn.com
+    - Describe the item here.

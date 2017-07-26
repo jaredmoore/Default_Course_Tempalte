@@ -6,8 +6,8 @@
 	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <!--<link href="{{assets}}/css/bootstrap.min.css" rel="stylesheet">-->
-    <link media="screen" href="{{assets}}/css/custom.css" rel="stylesheet">
-    <link media="print" href="{{assets}}/css/custom_print.css" rel="stylesheet">
+    <link media="screen" href="{{assets_dir}}/css/custom.css" rel="stylesheet">
+    <link media="print" href="{{assets_dir}}/css/custom_print.css" rel="stylesheet">
     <title>{{course-title}}</title>
   </head>
   <body>
@@ -28,7 +28,7 @@
   			<!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="course-information-header">
 				<div class="course-title-header">
-					<a href="/">{{course-title-extended}} {{course-term}}</a>
+					<a href="{{course_link}}">{{course-title-extended}} {{course-term}}</a>
 				</div>
 		    </div><!-- /.navbar-collapse -->
 
@@ -51,10 +51,17 @@
 				  <div class="collapse navbar-collapse navbar-ex1-collapse">
 				    <ul class="nav navbar-nav">
 				      <li><a href="{{ syllabus-path }}">Syllabus</a></li>
+				      <li><a href="./linux_command_line_overview.html">Command Line</a></li>
 				      <li class="dropdown">
 				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Assignments <span class="caret"></span></a>
 				          <ul class="dropdown-menu">
 				            {{{assignments_list}}}
+				          </ul>
+				      </li>
+				      <li class="dropdown">
+				      	  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
+				          <ul class="dropdown-menu">
+				            {{{projects_list}}}
 				          </ul>
 				      </li>
 				    </ul>
